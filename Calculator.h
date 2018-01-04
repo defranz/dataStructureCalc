@@ -1,7 +1,10 @@
+#include "Interpret.h"
+#include "Eval.h"
+#include "LinkedList.h"
 class Calculator {
 private:
-	Interpreter * interpreter;
-	Evaluator * evaluator;
+	Interpret * interpreter;
+	Eval * evaluator;
 	LinkedList * explist;
 public:
 	//initialize member variables
