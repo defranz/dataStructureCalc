@@ -1,6 +1,7 @@
-
-#include <std::vector>
-#include <std::string>
+#ifndef Included_ListNode_H
+#define Included_ListNode_H
+#include <vector>
+#include <string>
 
 class ListNode{
 private:
@@ -11,3 +12,5 @@ public:
 	~ListNode();
 
 };
+
+#endif

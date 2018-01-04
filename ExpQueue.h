@@ -1,6 +1,7 @@
-
-#include <std::vector>
-#include <std::string>
+#ifndef Included_ExpQueue_H
+#define Included_ExpQueue_H
+#include <vector>
+#include <string>
 class ExpQueue{
 private:
 	std::vector<std::string> queue;
@@ -14,3 +15,5 @@ public:
 	std::string dequeue();
 
 };
+
+#endif

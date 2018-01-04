@@ -1,6 +1,10 @@
+#ifndef Included_Calculator_H
+#define Included_Calculator_H
+
 #include "Interpret.h"
 #include "Eval.h"
 #include "LinkedList.h"
+
 class Calculator {
 private:
 	Interpret * interpreter;
@@ -13,3 +17,5 @@ public:
 	void interpretExp();
 	void eval();
 };
+
+#endif

@@ -1,4 +1,11 @@
-class Evaluator{
+#ifndef Included_Eval_H
+#define Included_Eval_H
+
+#include <vector>
+#include <string>
+#include "ExpStack.h"
+
+class Eval{
 private:
 	ExpStack * stack;
 
@@ -7,8 +14,8 @@ private:
 	std::vector<std::string> postfil;
 
 public:
-	Evaluator();
-	~Evaluator();
+	Eval();
+	~Eval();
 
 	void getExp(std::vector<std::string> expression);
 
@@ -16,5 +23,7 @@ public:
 
 	void printPostfix();
 
-	int eval()
-}
+	int eval();
+};
+
+#endif

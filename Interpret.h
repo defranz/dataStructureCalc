@@ -1,9 +1,15 @@
-#include <std::string>
-#include <std::vector>
+#ifndef Included_Interpret_H
+#define Included_Interpret_H
+
+#include <string>
+#include <vector>
+#include "ExpQueue.h"
+#include "ExpStack.h"
+#include "LinkedList.h"
 class Interpret {
 private:
 	ExpQueue * expqueue;
-	ExpStack *expstack;
+	ExpStack * expstack;
 public:
 	/* a linked list of valid expressions */
 	LinkedList * explist;
@@ -23,3 +29,5 @@ public:
 
 	LinkedList * getExpList();
 };
+
+#endif
