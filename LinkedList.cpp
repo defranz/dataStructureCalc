@@ -31,5 +31,8 @@ LinkedList::~LinkedList()
 }
 
 ListNode * LinkedList::removeAtHead(){
-	return this->head;
+	ListNode * holder;
+	holder = this->head;
+	this->head = this->head->getNext();
+	return holder;
 }

@@ -10,9 +10,11 @@ public:
 
 	~ExpQueue();
 
-	void enqueue();
+	void enqueue(std::string item);
 
 	std::string dequeue();
+
+	int getSize();
 
 };
 

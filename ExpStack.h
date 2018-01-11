@@ -14,8 +14,10 @@ public:
 
 	~ExpStack();
 
-	void push();
+	void push(std::string item);
 
 	std::string pop();
+
+	int getSize();
 };
 #endif
