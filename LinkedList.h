@@ -4,6 +4,7 @@
 
 class LinkedList{
 public:
+
 	ListNode * head;
 
 	ListNode * tail;
@@ -12,7 +13,7 @@ public:
 
 	~LinkedList();
 
-	void Insert(ListNode *node);
+	void Insert(ListNode * node);
 
 	ListNode * removeAtHead();
 
